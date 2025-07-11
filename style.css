@@ -1,0 +1,275 @@
+/* ==========================================================================
+   1. IMPORTAÇÃO DE FONTES E VARIÁVEIS
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variáveis de cores para fácil manutenção */
+:root {
+    --cor-fundo: #121828;
+    --cor-fundo-secundario: #1a2238;
+    --cor-texto-principal: #e0e0e0;
+    --cor-texto-subtitulo: #9da3af;
+    --cor-destaque: #4f89f2;
+}
+
+/* ==========================================================================
+   2. ESTILOS GERAIS (BODY)
+   ========================================================================== */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    scroll-behavior: smooth; /* Para rolagem suave quando tivermos links */
+}
+
+/* ==========================================================================
+   3. CABEÇALHO (HEADER)
+   ========================================================================== */
+header {
+    background-color: var(--cor-fundo-secundario);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #2c3858;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header-container .subtitulo {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    color: var(--cor-texto-subtitulo);
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   4. CONTEÚDO PRINCIPAL E SEÇÕES
+   ========================================================================== */
+
+/* Define a área principal onde todas as seções vão ficar */
+main {
+    width: 90%; /* Ocupa 90% da largura da tela */
+    max-width: 960px; /* Mas limita a 960px em telas muito grandes */
+    margin: 40px auto; /* Centraliza na página com um espaço no topo/baixo */
+}
+
+/* Estilo padrão para todas as seções (Sobre, Projetos, etc.) */
+section {
+    padding: 60px 20px; /* Espaçamento interno para o conteúdo respirar */
+    border-bottom: 1px solid #2c3858; /* Linha sutil para separar as seções */
+    text-align: center; /* Alinha o conteúdo ao centro por padrão */
+}
+
+/* Remove a borda da última seção para um acabamento limpo */
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* Estilo para os títulos de seção (H2) */
+section h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: var(--cor-destaque); /* Usa a cor azul de destaque que definimos */
+    font-weight: 600;
+}
+
+/* Estilo específico para o parágrafo da seção "Sobre Mim" */
+#sobre p {
+    max-width: 700px; /* Limita a largura da linha para facilitar a leitura */
+    margin: 0 auto; /* Centraliza o parágrafo dentro da seção */
+    font-size: 1.1em;
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+    color: var(--cor-texto-subtitulo); /* Usa uma cor mais suave para o texto */
+}
+
+/* ==========================================================================
+   5. GALERIA DE PROJETOS
+   ========================================================================== */
+
+/* O container que segura todos os cards */
+.galeria-projetos {
+    display: grid;
+    /* Cria um grid responsivo: no mínimo 300px por card, mas se ajusta para preencher o espaço */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Espaço entre os cards */
+}
+
+/* O estilo de cada card de projeto */
+.card-projeto {
+    background-color: var(--cor-fundo-secundario);
+    border: 1px solid #2c3858;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem não vaze para fora dos cantos arredondados */
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px); /* Efeito de "levantar" o card */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* A imagem de preview do projeto */
+.card-projeto img {
+    width: 100%;
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    display: block;
+}
+
+/* Título e descrição dentro do card */
+.card-projeto h3 {
+    font-size: 1.5em;
+    margin: 20px 20px 10px 20px;
+    color: var(--cor-texto-principal);
+}
+
+.projeto-descricao {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin: 0 20px 20px 20px;
+    color: var(--cor-texto-subtitulo);
+}
+
+/* Os links no final do card */
+.projeto-links {
+    padding: 0 20px 20px 20px;
+    margin-top: auto; /* Empurra os links para o final do card */
+}
+
+.projeto-links a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.link-demo {
+    background-color: var(--cor-destaque);
+    color: #fff;
+}
+.link-demo:hover {
+    background-color: #3a79e0;
+}
+
+.link-codigo {
+    background-color: #333;
+    color: #fff;
+}
+.link-codigo:hover {
+    background-color: #555;
+}
+
+/* ==========================================================================
+   6. SEÇÃO DE HABILIDADES
+   ========================================================================== */
+
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os ícones */
+    margin-top: 40px;
+}
+
+.skill-item {
+    background-color: var(--cor-fundo-secundario);
+    border: 1px solid #2c3858;
+    border-radius: 8px;
+    width: 130px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background-color: #2c3858;
+}
+
+.skill-item i {
+    font-size: 3em; /* Tamanho do ícone */
+    color: var(--cor-destaque);
+    margin-bottom: 15px;
+}
+
+.skill-item p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--cor-texto-principal);
+}
+
+/* ==========================================================================
+   7. SEÇÃO DE CONTATO
+   ========================================================================== */
+
+#contato p {
+    margin-bottom: 40px;
+}
+
+.links-contato {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px; /* Espaço entre os links */
+}
+
+.link-social {
+    display: inline-flex; /* Para alinhar ícone e texto */
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-fundo-secundario);
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 1px solid #2c3858;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link-social:hover {
+    transform: translateY(-5px);
+    background-color: #2c3858;
+}
+
+.link-social i {
+    font-size: 2em; /* Tamanho do ícone */
+    margin-right: 15px; /* Espaço entre o ícone e o texto */
+}
+
+.link-social span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Cores específicas para cada link */
+#link-github i { color: #ffffff; }
+#link-linkedin i { color: #0e76a8; }
+#link-email i { color: #c71610; }
+
+/* ==========================================================================
+   8. RODAPÉ (FOOTER)
+   ========================================================================== */
+
+footer {
+    text-align: center;
+    padding: 40px 20px; /* Um bom espaçamento interno */
+    margin-top: 60px; /* Garante um espaço de respiro acima do rodapé */
+    background-color: var(--cor-fundo); /* Fundo igual ao do body para integrar */
+    border-top: 1px solid #2c3858; /* Linha sutil para separar do conteúdo */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--cor-texto-subtitulo); /* Cor suave */
+}
