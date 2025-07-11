@@ -10,8 +10,7 @@ Bem-vindo ao repositório do meu portfólio pessoal! Este site foi criado para a
 
 Este é um site de portfólio de página única, totalmente responsivo, construído do zero para servir como uma galeria central para meus trabalhos mais importantes. O objetivo foi criar uma interface limpa, profissional e agradável para exibir minhas habilidades e projetos.
 
-![Screenshot do Portfólio](imagens/preview-portfolio.jpg) 
-*(Nota: Para esta imagem funcionar, você precisará tirar um print da sua página de portfólio finalizada e salvá-la como `preview-portfolio.jpg` na sua pasta `imagens`)*
+![Screenshot do Portfólio](imagens/preview-portfolio.png) 
 
 ---
 
