@@ -34,5 +34,5 @@ As seguintes tecnologias foram usadas na construção deste projeto:
 
 ## ✉️ Contato
 
-* **LinkedIn:** [Link para o seu perfil do LinkedIn]
-* **Email:** [Seu endereço de e-mail]
+* **LinkedIn:** [www.linkedin.com/in/thiagoaoliveirahtml]
+* **Email:** [thiago_ar@hotmail.com.br]
