@@ -1,175 +1,861 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thiago Araujo - Portfólio de Desenvolvedor</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
 
-    <header>
-        <div class="header-container">
-            <h1>Thiago de Araujo Oliveira</h1>
-            <p class="subtitulo">Desenvolvedor Criativo | Solucionando Problemas com Código</p>
-        </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Portfólio de Thiago Araujo Oliveira, bacharel em Ciência da Computação com foco em Suporte Técnico, ERP, SaaS, Service Desk e desenvolvimento web."
+    />
+
+    <title>Thiago Araujo | Tecnologia, Suporte & Desenvolvimento</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =========================================================
+         FUNDO DECORATIVO
+    ========================================================== -->
+    <div class="background-grid"></div>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <!-- =========================================================
+         CABEÇALHO
+    ========================================================== -->
+    <header class="cabecalho">
+      <div class="container nav-container">
+        <a href="#inicio" class="logo">
+          <span class="logo-simbolo">&lt;TA/&gt;</span>
+          <span class="logo-texto">Thiago Araujo</span>
+        </a>
+
+        <nav class="navegacao" id="navegacao">
+          <a href="#sobre">Sobre</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button
+          class="menu-mobile"
+          id="menuMobile"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </header>
 
     <main>
+      <!-- =====================================================
+             HERO
+        ====================================================== -->
+      <section class="hero" id="inicio">
+        <div class="container hero-container">
+          <div class="hero-conteudo reveal">
+            <div class="status-profissional">
+              <span class="status-ponto"></span>
+              Disponível para novas oportunidades
+            </div>
 
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>
-                Olá! Sou Thiago de Araujo Oliveira, um Desenvolvedor Web (Full-Stack em Formação).
-                Com uma base sólida construída na graduação em Ciência da Computação e em um treinamento intensivo de Desenvolvimento Web, meu foco é transformar ideias em soluções funcionais e criativas. Sou apaixonado por construir interfaces interativas e resolver problemas complexos com código limpo e eficiente.
-                Atualmente, estou aprofundando meus conhecimentos em tecnologias de back-end e banco de dados, buscando sempre conectar a teoria com a prática para criar aplicações completas e robustas e quem sabe futuramente desenvolver jogos.
+            <p class="hero-introducao">Olá, eu sou</p>
+
+            <h1>
+              Thiago
+              <span>Araujo.</span>
+            </h1>
+
+            <h2>Tecnologia aplicada à solução de problemas.</h2>
+
+            <p class="hero-descricao">
+              Bacharel em Ciência da Computação com experiência prática em
+              suporte técnico, operação de sistemas e processos de varejo. Meu
+              foco profissional está em
+              <strong
+                >Suporte Técnico, ERP/SaaS, Service Desk e Implantação de
+                Sistemas</strong
+              >, utilizando desenvolvimento web como diferencial técnico.
             </p>
-        </section>
 
-       <section id="projetos">
-    <h2>Meus Projetos</h2>
-    <div class="galeria-projetos">
+            <div class="hero-tags">
+              <span>Suporte Técnico</span>
+              <span>ERP / SaaS</span>
+              <span>Service Desk</span>
+              <span>Implantação</span>
+              <span>Desenvolvimento Web</span>
+            </div>
 
-       <div class="card-projeto">
-    <img src="imagens/preview-relogio-gotico.png" alt="Preview do projeto A Torre da Tempestade">
-    <div class="card-conteudo">
-        <h3>A Torre da Tempestade</h3>
-        <p class="projeto-descricao">
-            Um relógio gótico totalmente funcional que cria uma atmosfera imersiva com animações em CSS e JavaScript. A cena reage à passagem do tempo, com o fundo do castelo mudando para refletir o ciclo de dia e noite. Use os controles para viajar pelas horas e ver o cenário se transformar.
-        </p>
-        <div class="projeto-links">
-            <a href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/relogio-gotico/" class="link-demo" target="_blank">Ver ao Vivo</a>
-            <a href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/relogio-gotico" class="link-codigo" target="_blank">Ver o Código</a>
+            <div class="hero-acoes">
+              <a href="#projetos" class="botao botao-principal">
+                <i class="fa-solid fa-code"></i>
+                Ver projetos
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/thaigoaoliveira/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao botao-secundario"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+                LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao botao-secundario"
+              >
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-terminal reveal">
+            <div class="terminal">
+              <div class="terminal-topo">
+                <div class="terminal-botoes">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <p>thiago@portfolio:~</p>
+              </div>
+
+              <div class="terminal-conteudo">
+                <p>
+                  <span class="terminal-prompt">$</span>
+                  whoami
+                </p>
+
+                <p class="terminal-resposta">Thiago Araujo Oliveira</p>
+
+                <p>
+                  <span class="terminal-prompt">$</span>
+                  cat perfil.txt
+                </p>
+
+                <div class="terminal-resposta terminal-lista">
+                  <span>→ Bacharel em Ciência da Computação</span>
+                  <span>→ Suporte Técnico</span>
+                  <span>→ ERP / SaaS</span>
+                  <span>→ Service Desk</span>
+                  <span>→ Desenvolvimento Web</span>
+                </div>
+
+                <p>
+                  <span class="terminal-prompt">$</span>
+                  status
+                </p>
+
+                <p class="terminal-resposta terminal-status">
+                  <span></span>
+                  pronto para o próximo desafio_
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
 
-       <div class="card-projeto">
-    <img src="imagens/preview-leitor-zen.png" alt="Preview do projeto Leitor Zen">
-    <div class="card-conteudo">
-        <h3>Leitor Zen</h3>
-        <p class="projeto-descricao">
-            Uma interface de leitura adaptativa que coloca o conforto do usuário em primeiro lugar. O projeto utiliza JavaScript para controlar a troca de temas, ajustar a acessibilidade da fonte e salvar as configurações do usuário no `localStorage`, demonstrando um forte foco em UX/UI.
-        </p>
-        <div class="projeto-links">
-            <a href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/leitor-zen/" class="link-demo" target="_blank">Ver ao Vivo</a>
-            <a href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/leitor-zen" class="link-codigo" target="_blank">Ver o Código</a>
+      <!-- =====================================================
+             SOBRE
+        ====================================================== -->
+      <section class="secao" id="sobre">
+        <div class="container">
+          <div class="titulo-secao reveal">
+            <span>01.</span>
+            <h2>Sobre mim</h2>
+          </div>
+
+          <div class="sobre-grid">
+            <div class="sobre-texto reveal">
+              <p class="texto-destaque">
+                Minha trajetória combina tecnologia com experiência prática em
+                operações empresariais.
+              </p>
+
+              <p>
+                Sou bacharel em Ciência da Computação pela Universidade Cidade
+                de São Paulo (UNICID) e atuo em um ambiente no qual tecnologia,
+                atendimento e processos de negócio fazem parte da rotina.
+              </p>
+
+              <p>
+                Tenho experiência com suporte a computadores, impressoras, redes
+                e sistemas, além de atividades relacionadas a PDV, estoque,
+                faturamento, compras e processos fiscais como NF-e, NFC-e, NCM e
+                CST/CSOSN.
+              </p>
+
+              <p>
+                Paralelamente, desenvolvo aplicações web para ampliar minha
+                experiência prática com HTML, CSS e JavaScript. Busco uma
+                oportunidade em tecnologia onde possa unir capacidade técnica,
+                conhecimento operacional e resolução de problemas.
+              </p>
+            </div>
+
+            <div class="sobre-cards reveal">
+              <article class="mini-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <div>
+                  <span>Formação</span>
+                  <strong>Ciência da Computação</strong>
+                  <small>UNICID • Bacharelado</small>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <i class="fa-solid fa-headset"></i>
+
+                <div>
+                  <span>Foco</span>
+                  <strong>Suporte & Sistemas</strong>
+                  <small>ERP • SaaS • Service Desk</small>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+                  <span>Diferencial</span>
+                  <strong>Desenvolvimento Web</strong>
+                  <small>HTML • CSS • JavaScript</small>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
 
-        <div class="card-projeto">
-    <img src="imagens/preview-lista-tarefas.png" alt="Preview do projeto Lista de Tarefas">
-    <div class="card-conteudo">
-        <h3>Lista de Tarefas (CRUD App)</h3>
-        <p class="projeto-descricao">
-            Uma aplicação web funcional que implementa todas as operações de um sistema CRUD (Criar, Ler, Atualizar, Deletar). Construída com JavaScript puro para manipulação do DOM, a lista de tarefas também utiliza o `localStorage` para garantir a persistência dos dados do usuário.
-        </p>
-        <div class="projeto-links">
-            <a href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/lista-de-tarefas/" class="link-demo" target="_blank">Ver ao Vivo</a>
-            <a href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/lista-de-tarefas" class="link-codigo" target="_blank">Ver o Código</a>
+      <!-- =====================================================
+             EXPERIÊNCIA
+        ====================================================== -->
+      <section class="secao secao-alternativa" id="experiencia">
+        <div class="container">
+          <div class="titulo-secao reveal">
+            <span>02.</span>
+            <h2>Experiência prática</h2>
+          </div>
+
+          <div class="experiencia-grid">
+            <article class="experiencia-principal reveal">
+              <div class="experiencia-topo">
+                <div>
+                  <span class="experiencia-periodo"> 2019 — Atual </span>
+
+                  <h3>Responsável Operacional</h3>
+
+                  <p>Processos de Varejo & Suporte de TI</p>
+                </div>
+
+                <div class="experiencia-icone">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+              </div>
+
+              <p class="experiencia-descricao">
+                Atuação na operação diária de loja, conectando atendimento,
+                processos administrativos, rotinas fiscais e suporte
+                tecnológico.
+              </p>
+
+              <div class="experiencia-lista">
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Operação de PDV e rotinas de caixa</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Emissão e conferência de NF-e/NFC-e</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Cadastro fiscal: NCM e CST/CSOSN</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Estoque, pedidos e organização de entregas</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Compras, cotações e fornecedores</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Atendimento e resolução de problemas operacionais</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Suporte a PCs, impressoras, redes e sistemas</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="experiencia-secundaria reveal">
+              <div class="experiencia-topo">
+                <div>
+                  <span class="experiencia-periodo"> 2014 — Atual </span>
+
+                  <h3>Suporte de TI & Desenvolvimento Web</h3>
+
+                  <p>Atuação autônoma</p>
+                </div>
+
+                <div class="experiencia-icone">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+              </div>
+
+              <div class="experiencia-lista">
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Manutenção e configuração de computadores</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Windows e Linux</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Redes locais e TCP/IP</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Roteadores, impressoras e periféricos</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Diagnóstico e troubleshooting</span>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Desenvolvimento com HTML, CSS e JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-    </div>
-</div>
-       <div class="card-projeto">
-    <img src="imagens/preview-parallax.png" alt="Preview do projeto Parallax Galaxia">
-    <div class="card-conteudo">
-        <h3>Parallax Galaxia</h3>
-        <p class="projeto-descricao">
-            Uma demonstração técnica do efeito parallax construída com JavaScript puro e CSS, criando uma rica ilusão de profundidade 3D e uma navegação visualmente dinâmica.
-        </p>
-        <div class="projeto-links">
-            <a href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/parallax-galaxia/" class="link-demo" target="_blank">Ver ao Vivo</a>
-            <a href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/parallax-galaxia" class="link-codigo" target="_blank">Ver o Código</a>
+      </section>
+
+      <!-- =====================================================
+             PROJETOS
+        ====================================================== -->
+      <section class="secao" id="projetos">
+        <div class="container">
+          <div class="titulo-secao reveal">
+            <span>03.</span>
+            <h2>Projetos</h2>
+          </div>
+
+          <p class="introducao-secao reveal">
+            Projetos desenvolvidos para praticar desenvolvimento web,
+            interfaces, persistência de dados e resolução de problemas.
+          </p>
+
+          <!-- SUPPORTFLOW DESTAQUE -->
+          <article class="projeto-destaque reveal">
+            <div class="projeto-destaque-imagem">
+              <img
+                src="imagens/preview-supportflow.png"
+                alt="Dashboard do sistema SupportFlow"
+              />
+
+              <div class="imagem-overlay"></div>
+            </div>
+
+            <div class="projeto-destaque-conteudo">
+              <span class="projeto-label"> PROJETO EM DESTAQUE </span>
+
+              <h3>SupportFlow</h3>
+
+              <p class="projeto-subtitulo">Sistema de Gestão de Chamados</p>
+
+              <p>
+                Aplicação web criada para simular o fluxo de atendimento de um
+                Service Desk. Possui dashboard, gestão de chamados, prioridades,
+                status, SLA, histórico de atendimento, atualizações técnicas e
+                escalonamento entre N1 e N2.
+              </p>
+
+              <p>
+                Os dados são armazenados localmente no navegador, permitindo
+                demonstrar persistência e manipulação de informações sem
+                utilização de backend.
+              </p>
+
+              <div class="tecnologias">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+                <span>Service Desk</span>
+                <span>SLA</span>
+              </div>
+
+              <div class="projeto-acoes">
+                <a
+                  href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/supportflow/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Ver projeto
+                </a>
+
+                <a
+                  href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/supportflow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- OUTROS PROJETOS -->
+          <div class="projetos-grid">
+            <!-- TORRE -->
+            <article class="projeto-card reveal">
+              <div class="projeto-imagem">
+                <img
+                  src="imagens/preview-relogio-gotico.png"
+                  alt="Projeto A Torre da Tempestade"
+                />
+              </div>
+
+              <div class="projeto-card-conteudo">
+                <div class="projeto-card-topo">
+                  <span>Experiência interativa</span>
+                  <i class="fa-solid fa-cloud-bolt"></i>
+                </div>
+
+                <h3>A Torre da Tempestade</h3>
+
+                <p>
+                  Relógio atmosférico interativo que combina horário,
+                  localização e clima para transformar dinamicamente uma
+                  paisagem gótica.
+                </p>
+
+                <div class="tecnologias">
+                  <span>JavaScript</span>
+                  <span>CSS</span>
+                  <span>API</span>
+                  <span>Geolocalização</span>
+                </div>
+
+                <div class="projeto-acoes">
+                  <a
+                    href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/relogio-gotico/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/relogio-gotico"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- LEITOR -->
+            <article class="projeto-card reveal">
+              <div class="projeto-imagem">
+                <img
+                  src="imagens/preview-leitor-zen.png"
+                  alt="Projeto Leitor Zen"
+                />
+              </div>
+
+              <div class="projeto-card-conteudo">
+                <div class="projeto-card-topo">
+                  <span>UX & Acessibilidade</span>
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <h3>Leitor Zen</h3>
+
+                <p>
+                  Interface de leitura adaptativa com temas, foco, controle
+                  tipográfico, progresso de leitura e preferências persistentes.
+                </p>
+
+                <div class="tecnologias">
+                  <span>JavaScript</span>
+                  <span>LocalStorage</span>
+                  <span>UX/UI</span>
+                </div>
+
+                <div class="projeto-acoes">
+                  <a
+                    href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/leitor-zen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/leitor-zen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- JORNADA -->
+            <article class="projeto-card reveal">
+              <div class="projeto-imagem">
+                <img
+                  src="imagens/preview-parallax.png"
+                  alt="Projeto Jornada Cósmica"
+                />
+              </div>
+
+              <div class="projeto-card-conteudo">
+                <div class="projeto-card-topo">
+                  <span>Experiência visual</span>
+                  <i class="fa-solid fa-shuttle-space"></i>
+                </div>
+
+                <h3>Jornada Cósmica</h3>
+
+                <p>
+                  Experiência parallax com múltiplas camadas, transições de
+                  cenário, estrelas dinâmicas e navegação cinematográfica.
+                </p>
+
+                <div class="tecnologias">
+                  <span>JavaScript</span>
+                  <span>CSS</span>
+                  <span>Parallax</span>
+                </div>
+
+                <div class="projeto-acoes">
+                  <a
+                    href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/parallax-galaxia/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/parallax-galaxia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- ESPAÇO -->
+            <article class="projeto-card reveal">
+              <div class="projeto-imagem">
+                <img
+                  src="imagens/preview-site-espacial.png"
+                  alt="Projeto Explorando o Espaço"
+                />
+              </div>
+
+              <div class="projeto-card-conteudo">
+                <div class="projeto-card-topo">
+                  <span>Site multipágina</span>
+                  <i class="fa-solid fa-meteor"></i>
+                </div>
+
+                <h3>Explorando o Espaço</h3>
+
+                <p>
+                  Site responsivo sobre astronomia com múltiplas páginas,
+                  navegação temática e galeria interativa.
+                </p>
+
+                <div class="tecnologias">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="projeto-acoes">
+                  <a
+                    href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/explorando-espaco/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/explorando-espaco"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- TAREFAS -->
+            <article class="projeto-card reveal">
+              <div class="projeto-imagem">
+                <img
+                  src="imagens/preview-lista-tarefas.png"
+                  alt="Projeto Lista de Tarefas"
+                />
+              </div>
+
+              <div class="projeto-card-conteudo">
+                <div class="projeto-card-topo">
+                  <span>Aplicação CRUD</span>
+                  <i class="fa-solid fa-list-check"></i>
+                </div>
+
+                <h3>Lista de Tarefas</h3>
+
+                <p>
+                  Aplicação para criação, edição, conclusão, exclusão e
+                  filtragem de tarefas com persistência de dados no navegador.
+                </p>
+
+                <div class="tecnologias">
+                  <span>JavaScript</span>
+                  <span>DOM</span>
+                  <span>LocalStorage</span>
+                </div>
+
+                <div class="projeto-acoes">
+                  <a
+                    href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/lista-de-tarefas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/lista-de-tarefas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    Código
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
 
-        <div class="card-projeto">
-    <img src="imagens/preview-site-espacial.png" alt="Preview do projeto Explorando o Espaço">
-    <div class="card-conteudo">
-        <h3>Explorando o Espaço</h3>
-        <p class="projeto-descricao">
-            Um site responsivo multi-página que demonstra habilidades fundamentais de front-end. Construído com HTML e CSS para uma estrutura sólida e adaptável, o projeto também utiliza JavaScript para criar uma galeria de imagens interativa.
-        </p>
-        <div class="projeto-links">
-            <a href="https://t-h-i-a-g-o-a-r-a-u-j-o.github.io/explorando-espaco/" class="link-demo" target="_blank">Ver ao Vivo</a>
-            <a href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/explorando-espaco" class="link-codigo" target="_blank">Ver o Código</a>
+      <!-- =====================================================
+             HABILIDADES
+        ====================================================== -->
+      <section class="secao secao-alternativa" id="habilidades">
+        <div class="container">
+          <div class="titulo-secao reveal">
+            <span>04.</span>
+            <h2>Conhecimentos & habilidades</h2>
+          </div>
+
+          <div class="habilidades-grid">
+            <article class="habilidade-grupo reveal">
+              <div class="habilidade-cabecalho">
+                <i class="fa-solid fa-headset"></i>
+
+                <div>
+                  <span>Área profissional</span>
+                  <h3>Suporte & Operações</h3>
+                </div>
+              </div>
+
+              <div class="habilidade-tags">
+                <span>Suporte Técnico</span>
+                <span>Troubleshooting</span>
+                <span>Windows</span>
+                <span>Linux</span>
+                <span>Hardware</span>
+                <span>TCP/IP</span>
+                <span>Redes</span>
+                <span>Impressoras</span>
+                <span>PDV</span>
+                <span>ERP</span>
+                <span>Atendimento</span>
+              </div>
+            </article>
+
+            <article class="habilidade-grupo reveal">
+              <div class="habilidade-cabecalho">
+                <i class="fa-solid fa-file-invoice"></i>
+
+                <div>
+                  <span>Processos</span>
+                  <h3>Varejo & Fiscal</h3>
+                </div>
+              </div>
+
+              <div class="habilidade-tags">
+                <span>NF-e</span>
+                <span>NFC-e</span>
+                <span>NCM</span>
+                <span>CST/CSOSN</span>
+                <span>Estoque</span>
+                <span>Faturamento</span>
+                <span>Compras</span>
+                <span>Fornecedores</span>
+                <span>Logística</span>
+              </div>
+            </article>
+
+            <article class="habilidade-grupo reveal">
+              <div class="habilidade-cabecalho">
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+                  <span>Tecnologia</span>
+                  <h3>Desenvolvimento</h3>
+                </div>
+              </div>
+
+              <div class="habilidade-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>DOM</span>
+                <span>LocalStorage</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>GitHub Pages</span>
+              </div>
+            </article>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
 
-    </div>
-</section>
+      <!-- =====================================================
+             CONTATO
+        ====================================================== -->
+      <section class="secao contato" id="contato">
+        <div class="container contato-container reveal">
+          <span class="contato-label"> 05. Vamos conversar? </span>
 
-       <section id="habilidades">
-    <h2>Habilidades</h2>
-    <div class="lista-habilidades">
+          <h2>
+            Estou buscando meu próximo
+            <span>desafio em tecnologia.</span>
+          </h2>
 
-        <div class="skill-item">
-            <i class="fas fa-code"></i>
-            <p>HTML5</p>
+          <p>
+            Tenho interesse em oportunidades de Suporte Técnico, ERP/SaaS,
+            Service Desk e Implantação de Sistemas, especialmente em posições
+            remotas.
+          </p>
+
+          <div class="contato-acoes">
+            <a
+              href="mailto:thiago_ar@hotmail.com.br"
+              class="botao botao-principal"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              Enviar e-mail
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/thaigoaoliveira/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="botao botao-secundario"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="botao botao-secundario"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+          </div>
         </div>
-
-        <div class="skill-item">
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS3</p>
-        </div>
-
-        <div class="skill-item">
-            <i class="fab fa-js-square"></i>
-            <p>JavaScript</p>
-        </div>
-
-        <div class="skill-item">
-            <i class="fas fa-pencil-ruler"></i>
-            <p>p5.js</p>
-        </div>
-
-        <div class="skill-item">
-            <i class="fab fa-git-alt"></i>
-            <p>Git</p>
-        </div>
-
-        <div class="skill-item">
-            <i class="fab fa-github"></i>
-            <p>GitHub</p>
-        </div>
-
-    </div>
-</section>
-
-       <section id="contato">
-    <h2>Contato</h2>
-    <p>Vamos conversar! Você pode me encontrar nas seguintes plataformas:</p>
-    <div class="links-contato">
-
-        <a href="https://github.com/t-h-i-a-g-o-a-r-a-u-j-o/Thiago-Araujo" class="link-social" id="link-github" target="_blank">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-        </a>
-
-        <a href="http://linkedin.com/in/thiagoaaraujooliveira" class="link-social" id="link-linkedin" target="_blank">
-            <i class="fab fa-linkedin"></i>
-            <span>LinkedIn</span>
-        </a>
-
-        <a href="mailto:thiago_ar@hotmail.com.br" class="link-social" id="link-email">
-            <i class="fas fa-envelope"></i>
-            <span>E-mail</span>
-        </a>
-
-    </div>
-</section>
-
+      </section>
     </main>
 
+    <!-- =========================================================
+         RODAPÉ
+    ========================================================== -->
     <footer>
-        <p>&copy; 2025 Thiago de Araujo Oliveira. Todos os direitos reservados.</p>
+      <div class="container footer-container">
+        <div>
+          <strong>Thiago Araujo Oliveira</strong>
+
+          <p>Tecnologia • Suporte • Desenvolvimento</p>
+        </div>
+
+        <p class="copyright">
+          © <span id="anoAtual">2026</span> Thiago Araujo Oliveira.
+        </p>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+    <button class="voltar-topo" id="voltarTopo" aria-label="Voltar ao topo">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
